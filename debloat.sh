@@ -51,6 +51,7 @@ bloat+=("com.tcl.miracast") # Miracast service
 bloat+=("com.tcl.imageplayer") # Image player app
 bloat+=("com.tcl.rc.ota") # OTA update service for non-critical updates
 bloat+=("com.tcl.airplay2") # Airplay service
+bloat+=("com.tcl.waterfall.overseas") # TCL Channel App
 
 # Freeview Apps (Could be useful for some users, but often considered bloat)
 bloat+=("uk.co.freeview.mdsclient") # Freeview MDS client
