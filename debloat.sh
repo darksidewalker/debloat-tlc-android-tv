@@ -25,75 +25,84 @@ echo "Successfully connected to TV at IP: $TV_IP."
 # Bloatware list - safe to remove apps
 bloat=()
 
-# TCL-specific bloatware that can be removed (checked for non-critical apps)
-bloat+=("com.tcl.partnercustomizer")
-bloat+=("com.tcl.smartalexa") # Alexa integration for TV controls
+# TCL Bloatware
+bloat+=("com.tcl.partnercustomizer") # TCL partner customization app
 bloat+=("com.tcl.gallery") # Gallery app
 bloat+=("com.tcl.notereminder") # Notes and reminders app
 bloat+=("com.tcl.ui_mediaCenter") # USB File explorer app
-bloat+=("com.tcl.messagebox")
-bloat+=("com.tcl.guard") # Shitty "antivirus"
-bloat+=("com.tcl.tvweishi") # Homescreen service for shitty "antivirus"
-bloat+=("com.tcl.dashboard")
-bloat+=("com.tcl.tv.tclhome_master")
-bloat+=("com.tcl.copydatatotv")
-bloat+=("com.tcl.initsetup")
-bloat+=("com.tcl.usercenter")
-bloat+=("com.tcl.externaldevice.update")
-bloat+=("com.tcl.useragreement")
-bloat+=("com.tcl.appstatecontroller")
-bloat+=("com.tcl.videoplayer")
-bloat+=("com.tcl.pvr.pvrplayer")
-bloat+=("com.tcl.versionUpdateApp")
-bloat+=("com.tcl.assistant")
-bloat+=("com.tcl.system.server")
-bloat+=("com.tcl.ext.services")
+bloat+=("com.tcl.guard") # Antivirus app
+bloat+=("com.tcl.tvweishi") # Homescreen service for antivirus
+bloat+=("com.tcl.tv.tclhome_master") # TCL home master service
+bloat+=("com.tcl.copydatatotv") # Data transfer service
+bloat+=("com.tcl.initsetup") # Initial setup app
+bloat+=("com.tcl.usercenter") # User account management
+bloat+=("com.tcl.externaldevice.update") # External device update service
+bloat+=("com.tcl.useragreement") # User agreement service
+bloat+=("com.tcl.appstatecontroller") # App state controller
+bloat+=("com.tcl.videoplayer") # Video player app
+bloat+=("com.tcl.pvr.pvrplayer") # PVR player app
+bloat+=("com.tcl.assistant") # TCL assistant app
+bloat+=("com.tcl.ext.services") # External services
 bloat+=("com.tcl.bootadservice") # Ads within TCL apps
-bloat+=("com.tcl.esticker")
-bloat+=("com.tcl.bi")
-bloat+=("com.tcl.xian.StartandroidService")
-bloat+=("com.tcl.miracast")
-bloat+=("com.tcl.imageplayer")
+bloat+=("com.tcl.esticker") # Sticker app
+bloat+=("com.tcl.bi") # Business intelligence app
+bloat+=("com.tcl.xian.StartandroidService") # Start Android service
+bloat+=("com.tcl.miracast") # Miracast service
+bloat+=("com.tcl.imageplayer") # Image player app
 bloat+=("com.tcl.rc.ota") # OTA update service for non-critical updates
+bloat+=("com.tcl.airplay2") # Airplay service
 
-# Freeview apps (could be useful for some users, but often considered bloat)
-bloat+=("uk.co.freeview.mdsclient")
-bloat+=("uk.co.freeview.amc_catchup")
-bloat+=("uk.co.freeview.onnow")
-bloat+=("uk.co.freeview.uktv")
-bloat+=("uk.co.freeview.fvpconfigauth")
-bloat+=("uk.co.freeview.systemdistributor")
-bloat+=("uk.co.freeview.tifbridge")
-bloat+=("uk.co.freeview.explore")
-bloat+=("uk.co.freeview.bbc")
-bloat+=("uk.co.freeview.ch5")
-bloat+=("uk.co.freeview.itv")
-bloat+=("uk.co.freeview.stv")
-bloat+=("uk.co.freeview.amc_horror")
-bloat+=("uk.co.freeview.ch4_vod")
+# Freeview Apps (Could be useful for some users, but often considered bloat)
+bloat+=("uk.co.freeview.mdsclient") # Freeview MDS client
+bloat+=("uk.co.freeview.amc_catchup") # Freeview AMC catch-up
+bloat+=("uk.co.freeview.onnow") # Freeview on now
+bloat+=("uk.co.freeview.uktv") # Freeview UKTV
+bloat+=("uk.co.freeview.fvpconfigauth") # Freeview FVP config auth
+bloat+=("uk.co.freeview.systemdistributor") # Freeview system distributor
+bloat+=("uk.co.freeview.tifbridge") # Freeview TIF bridge
+bloat+=("uk.co.freeview.explore") # Freeview explore app
+bloat+=("uk.co.freeview.bbc") # Freeview BBC app
+bloat+=("uk.co.freeview.ch5") # Freeview Channel 5 app
+bloat+=("uk.co.freeview.itv") # Freeview ITV app
+bloat+=("uk.co.freeview.stv") # Freeview STV app
+bloat+=("uk.co.freeview.amc_horror") # Freeview AMC horror
+bloat+=("uk.co.freeview.ch4_vod") # Freeview Channel 4 VOD
 
-# Other non-essential apps
-bloat+=("com.tvos") # Possibly related to TVOS
-bloat+=("com.google.android.apps.mediashell") # Unnecessary media app for some
-bloat+=("com.google.android.backdrop") # Background service
-bloat+=("com.google.android.syncadapters.calendar")
+# Other Non-Essential Apps
+bloat+=("com.android.cts.priv.ctsshim") # CTS shim for testing
 bloat+=("com.google.android.onetimeinitializer") # Google initializer
 bloat+=("com.google.android.partnersetup") # Google setup service
+bloat+=("com.google.android.feedback") # Google feedback service
+bloat+=("com.google.android.syncadapters.calendar") # Calendar sync adapter
 
-# Optional apps (based on user preference)
+# Optional Apps (Based on User Preference)
 bloat+=("com.google.android.youtube.tvmusic") # YouTube TV Music
 bloat+=("com.google.android.tvrecommendations") # Google TV recommendations (can be intrusive)
 bloat+=("com.google.android.marvin.talkback") # Talkback accessibility feature
-bloat+=("com.google.android.feedback") # Google feedback service
+bloat+=("com.google.android.play.games") # Google Play Games
+bloat+=("com.netflix.ninja") # Netflix app
+bloat+=("com.limelight") # Limelight app
+bloat+=("tv.mopa.ginga") # Ginga app
+bloat+=("com.mediatek.AirplayAPK") # Airplay service
 
 # Unwanted system apps that don’t affect core functions
 bloat+=("com.android.providers.calendar")
 bloat+=("com.android.providers.contacts")
 bloat+=("com.android.providers.userdictionary")
 
+# Just disable
 # Optional: Include more TCL apps if you are sure they aren’t needed
-#bloat+=("com.tcl.framework.custom") # TV UI elements
-#bloat+=("com.tcl.tv") # Might be critical for TV operations, proceed with caution
+dable+=("com.tcl.framework.custom") # TV UI elements
+dable+=("com.tcl.tv") # Might be critical for TV operations, proceed with caution
+dable+=("com.tcl.tvinput") # TV input service
+dable+=("com.tcl.ocean.instructions") # TCL User-Manual App
+dable+=("com.tcl.dashboard") # Dashboard service
+dable+=("com.tcl.messagebox") # Message box service
+dable+=("com.tcl.systemserver") # System server for TCL
+dable+=("com.tcl.ttvs")
+dable+=("com.tcl.providers.config") # Configuration provider
+dable+=("com.tcl.tv.tclhome_passive") # TCL smart home component
+dable+=("com.tcl.versionUpdateApp")
 
 # Start debloating process
 echo "Starting debloating process... Removing unwanted apps."
@@ -105,6 +114,16 @@ for package in "${bloat[@]}"; do
         echo "Successfully removed: $package"
     else
         echo "Failed to remove: $package"
+    fi
+done
+
+for package in "${dable[@]}"; do
+    echo "Disabling package: $package..."
+    adb shell pm disable-user "$package" 
+    if [ $? -eq 0 ]; then
+        echo "Successfully diabaled: $package"
+    else
+        echo "Failed to disable: $package"
     fi
 done
 
