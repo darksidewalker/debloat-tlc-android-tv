@@ -119,9 +119,9 @@ done
 
 for package in "${dable[@]}"; do
     echo "Disabling package: $package..."
-    adb shell pm disable-user "$package" 
+    adb shell pm disable-user --user 0 "$package" 
     if [ $? -eq 0 ]; then
-        echo "Successfully diabaled: $package"
+        echo "Successfully disabled: $package"
     else
         echo "Failed to disable: $package"
     fi
