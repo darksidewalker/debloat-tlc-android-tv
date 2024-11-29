@@ -23,7 +23,7 @@ Before using this script, ensure that you:
 1. **Clone the repository**:
 
 	```bash
-	git clone https://github.com/chrissy-dev/debloat-tlc-android-tv
+	git clone https://github.com/darksidewalker/debloat-tlc-android-tv/
 	cd debloat-tlc-android-tv
 	```
 
