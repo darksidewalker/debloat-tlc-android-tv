@@ -56,7 +56,10 @@ Before using this script, ensure that you:
 3. **Uninstalls Bloatware**:  
    The script iterates through a list of predefined apps and removes them using ADB commands. For each app, the script will notify you whether it was successfully removed or failed.
 
-4. **Reboots the TV**:  
+4. **Disables some unwanted tcl system-software**:
+   The script iterates through a list of predefined apps and diables them using ADB commands. For each app, the script will notify you whether it was successfully diabled or failed.
+
+6. **Reboots the TV**:  
    After all apps are removed, the script reboots your TV to ensure that the changes take effect.
 
 ---
