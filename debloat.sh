@@ -52,6 +52,7 @@ bloat+=("com.tcl.imageplayer") # Image player app
 bloat+=("com.tcl.rc.ota") # OTA update service for non-critical updates
 bloat+=("com.tcl.airplay2") # Airplay service
 bloat+=("com.tcl.waterfall.overseas") # TCL Channel App
+bloat+=("com.tcl.channelplus") # TCL Channel App
 
 # Freeview Apps (Could be useful for some users, but often considered bloat)
 bloat+=("uk.co.freeview.mdsclient") # Freeview MDS client
@@ -85,6 +86,7 @@ bloat+=("com.netflix.ninja") # Netflix app
 bloat+=("com.limelight") # Limelight app
 bloat+=("tv.mopa.ginga") # Ginga app
 bloat+=("com.mediatek.AirplayAPK") # Airplay service
+bloat+=("tv.wuaki.apptv") # Rakuten TV
 
 # Unwanted system apps that don’t affect core functions
 bloat+=("com.android.providers.calendar")
